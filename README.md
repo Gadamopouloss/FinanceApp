@@ -34,7 +34,7 @@ It was developed as an academic thesis project with a strong focus on:
 
 ---
 
-###  Transaction Management
+### 💳 Transaction Management
 
 * Add income transactions
 * Add expense transactions
@@ -207,41 +207,41 @@ MySQL Database
 
 ### 🔹 Setup Instructions
 
-1️⃣ Clone the repository:
+-> Clone the repository:
 
 ```bash
 git clone https://github.com/your-username/financial-management-system.git
 ```
 
-2️⃣ Move the project folder into:
+-> Move the project folder into:
 
 * `htdocs/` (XAMPP)
   or
 * your server root directory
 
-3️⃣ Create a database:
+-> Create a database:
 
 ```sql
 CREATE DATABASE financial_management;
 ```
 
-4️⃣ Import the provided `.sql` file via phpMyAdmin.
+-> Import the provided `.sql` file via phpMyAdmin.
 
-5️⃣ Configure database credentials in:
+-> Configure database credentials in:
 
 ```
 db_connection.php
 ```
 
-6️⃣ Install dependencies:
+-> Install dependencies:
 
 ```bash
 composer install
 ```
 
-7️⃣ Start Apache & MySQL.
+-> Start Apache & MySQL.
 
-8️⃣ Open in browser:
+-> Open in browser:
 
 ```
 http://localhost/financial-management-system
