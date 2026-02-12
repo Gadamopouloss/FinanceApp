@@ -6,7 +6,7 @@ Developed as a Final Thesis Project – Department of Computer Science & Telecom
 
 ---
 
-##  Overview
+## 📌 Overview
 
 The **Online Financial Management System** is a full-stack web application designed to help users efficiently manage, monitor, and analyze their personal finances.
 
@@ -24,7 +24,7 @@ It was developed as an academic thesis project with a strong focus on:
 
 ##  Core Features
 
-###  Authentication & User Management
+### 🔐 Authentication & User Management
 
 * Secure user registration
 * Login / Logout functionality
@@ -45,7 +45,7 @@ It was developed as an academic thesis project with a strong focus on:
 
 ---
 
-###  Financial Analytics & Visualization
+### 📊 Financial Analytics & Visualization
 
 * Income vs Expenses comparison
 * Monthly summaries
@@ -55,7 +55,7 @@ It was developed as an academic thesis project with a strong focus on:
 
 ---
 
-###  Savings Goals
+### 🎯 Savings Goals
 
 * Create personalized saving goals
 * Track progress per goal
@@ -64,7 +64,7 @@ It was developed as an academic thesis project with a strong focus on:
 
 ---
 
-###  Peer-to-Peer Money Transfers
+### 🔁 Peer-to-Peer Money Transfers
 
 * Transfer money between registered users
 * Automatic balance updates
@@ -73,7 +73,7 @@ It was developed as an academic thesis project with a strong focus on:
 
 ---
 
-###  Email Notification System
+### 📧 Email Notification System
 
 * SMTP-based mailing functionality
 * Transfer confirmation emails
@@ -81,7 +81,7 @@ It was developed as an academic thesis project with a strong focus on:
 
 ---
 
-###  Informational & Advisory Pages
+### 📚 Informational & Advisory Pages
 
 * Financial tips section
 * FAQ
@@ -91,7 +91,7 @@ It was developed as an academic thesis project with a strong focus on:
 
 ---
 
-##  System Architecture
+## 🏗️ System Architecture
 
 The application follows a **classic Client–Server Architecture**.
 
