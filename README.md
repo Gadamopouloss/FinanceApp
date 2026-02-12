@@ -153,28 +153,58 @@ MySQL Database
 
 ```
 .
-├── main/
-│   ├── imgs/
-│   ├── style/
-│   ├── *.html
-│   ├── *.css
-│   ├── *.js
-│
-├── register.php
+├── README.md
+├── composer.json
+├── composer.lock
+├── charts.php
+├── contact.php
+├── db_connection.php
+├── edit_description.php
+├── edit_transaction.php
+├── goal.php
+├── history.php
+├── index.js
+├── index.php
 ├── login.php
 ├── logout.php
-├── submit.php
-├── total.php
 ├── monthly.php
-├── yearly.php
-├── history.php
+├── register.php
+├── report.php
 ├── request.php
 ├── send_money.php
 ├── sendcontacts.php
-├── db_connection.php
-├── composer.json
+├── styles.css
+├── submit.php
+├── tagged_transactions.php
+├── total.php
+├── user.php
+├── yearly.php
 ├── vendor/
-└── README.md
+└── main1/
+    ├── faq.html
+    ├── faqs.js
+    ├── index.html
+    ├── privacy.html
+    ├── terms.html
+    ├── tips.html
+    ├── tips.js
+    ├── imgs/
+    │   ├── img.jpg
+    │   ├── img11.jpg
+    │   ├── img22.jpg
+    │   ├── img33.jpg
+    │   ├── img4.jpg
+    │   ├── img44.jpg
+    │   ├── team-1.jpg
+    │   ├── team-2.jpg
+    │   ├── team-3.jpg
+    │   └── team-4.jpg
+    └── style/
+        ├── faq.css
+        ├── style.css
+        ├── team.css
+        └── tips.css
+
 ```
 
 ---
