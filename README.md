@@ -1,27 +1,298 @@
-# FinanceApp
+# Online Financial Management System
 
-This application provides users with a comprehensive toolset to manage their finances effectively.  
+### A Full-Stack Web Application for Personal Financial Control
 
-Features :
+Developed as a Final Thesis Project – Department of Computer Science & Telecommunications
 
-- Home Page: Explore our user-friendly interface that introduces the application and its functionalities.  
+---
 
-- Financial Tips: Access valuable tips for optimizing your financial decisions.  
+##  Overview
 
-- Transaction Logging:  
-  - Record and track your transactions easily.  
-  - Categorize your income and expenses for better financial organization.  
-  - View transaction history for better financial insights.  
+The **Online Financial Management System** is a full-stack web application designed to help users efficiently manage, monitor, and analyze their personal finances.
 
-- Statistics:  
-  - View detailed statistics based on various parameters such as month, year, and overall history.  
-  - Analyze your financial trends with interactive charts and graphs.  
+The system enables structured budgeting, expense tracking, savings goal management, and financial visualization through dynamic statistical charts.
 
-- Money Transfers: Easily transfer money via email, phone, or contacts.  
+It was developed as an academic thesis project with a strong focus on:
 
-- Expense and Income Analysis: Gain insights through detailed statistics and graphical representations of your expenses and income.  
+* Personal financial awareness
+* Digital transaction management
+* Overconsumption reduction
+* Secure user-based data handling
+* Practical implementation of client-server architecture
 
-- Goal and Savings: Set financial goals and track your progress towards savings.  
-------------
+---
 
+##  Core Features
+
+###  Authentication & User Management
+
+* Secure user registration
+* Login / Logout functionality
+* Session-based authentication
+* User-specific data isolation
+* Controlled access to financial data
+
+---
+
+###  Transaction Management
+
+* Add income transactions
+* Add expense transactions
+* Categorized financial records
+* Monthly & yearly filtering
+* Complete transaction history
+* Real-time balance calculation
+
+---
+
+###  Financial Analytics & Visualization
+
+* Income vs Expenses comparison
+* Monthly summaries
+* Spending trend analysis
+* Dynamic chart rendering using JavaScript & Canvas API
+* Statistical overview dashboard
+
+---
+
+###  Savings Goals
+
+* Create personalized saving goals
+* Track progress per goal
+* Monitor saved vs target amount
+* Goal-based financial planning
+
+---
+
+###  Peer-to-Peer Money Transfers
+
+* Transfer money between registered users
+* Automatic balance updates
+* Transaction recording for both parties
+* Email notification for successful transfers
+
+---
+
+###  Email Notification System
+
+* SMTP-based mailing functionality
+* Transfer confirmation emails
+* System notification handling via Composer dependencies
+
+---
+
+###  Informational & Advisory Pages
+
+* Financial tips section
+* FAQ
+* Terms & Conditions
+* Privacy Policy
+* Smart financial advice integration
+
+---
+
+##  System Architecture
+
+The application follows a **classic Client–Server Architecture**.
+
+```
+Client (Browser)
+     ↓
+Frontend (HTML / CSS / JS / Bootstrap)
+     ↓ AJAX Requests
+Backend (PHP – Core)
+     ↓
+MySQL Database
+```
+
+### 🔹 Frontend
+
+* HTML5
+* CSS3
+* Bootstrap (Responsive UI)
+* JavaScript (ES6)
+* AJAX (asynchronous updates)
+* Canvas API (dynamic chart rendering)
+
+### 🔹 Backend
+
+* Core PHP (no heavy frameworks)
+* Server-side validation
+* Session management
+* Business logic handling
+* SMTP integration for email services
+
+### 🔹 Database
+
+* MySQL (Relational Model)
+* Structured entity relationships
+* User-based data isolation
+* Referential integrity between transactions & transfers
+
+---
+
+## 🗄️ Conceptual Database Design
+
+### Main Entities
+
+* `users`
+* `transactions`
+* `goals`
+* `transfers`
+
+### Relationships
+
+* One user → Many transactions
+* One user → Many goals
+* Transfers → Reference sender & receiver (user-to-user relation)
+* Each transaction is linked to a specific authenticated user
+
+---
+
+## 📂 Project Structure
+
+```
+.
+├── main/
+│   ├── imgs/
+│   ├── style/
+│   ├── *.html
+│   ├── *.css
+│   ├── *.js
+│
+├── register.php
+├── login.php
+├── logout.php
+├── submit.php
+├── total.php
+├── monthly.php
+├── yearly.php
+├── history.php
+├── request.php
+├── send_money.php
+├── sendcontacts.php
+├── db_connection.php
+├── composer.json
+├── vendor/
+└── README.md
+```
+
+---
+
+## 🛠️ Technology Stack
+
+| Technology           | Purpose                        |
+| -------------------- | ------------------------------ |
+| **PHP**              | Server-side logic & validation |
+| **MySQL**            | Relational database            |
+| **JavaScript (ES6)** | Dynamic interaction            |
+| **AJAX**             | Asynchronous communication     |
+| **Bootstrap**        | Responsive UI framework        |
+| **Canvas API**       | Financial data visualization   |
+| **Composer**         | Dependency management          |
+| **SMTP**             | Email notification system      |
+
+---
+
+## ⚙️ Installation Guide
+
+### 🔹 Requirements
+
+* PHP 8+
+* MySQL / MariaDB
+* Apache (XAMPP / WAMP recommended)
+* Composer
+
+---
+
+### 🔹 Setup Instructions
+
+1️⃣ Clone the repository:
+
+```bash
+git clone https://github.com/your-username/financial-management-system.git
+```
+
+2️⃣ Move the project folder into:
+
+* `htdocs/` (XAMPP)
+  or
+* your server root directory
+
+3️⃣ Create a database:
+
+```sql
+CREATE DATABASE financial_management;
+```
+
+4️⃣ Import the provided `.sql` file via phpMyAdmin.
+
+5️⃣ Configure database credentials in:
+
+```
+db_connection.php
+```
+
+6️⃣ Install dependencies:
+
+```bash
+composer install
+```
+
+7️⃣ Start Apache & MySQL.
+
+8️⃣ Open in browser:
+
+```
+http://localhost/financial-management-system
+```
+
+---
+
+## 🔒 Security Considerations
+
+* Session-based authentication
+* Controlled access per user
+* Server-side validation
+* Email verification logic
+* Structured transfer validation
+* Prepared statements (recommended for SQL injection prevention)
+* Isolated user financial records
+
+> ⚠️ Note: Additional hardening (CSRF tokens, password hashing best practices, rate limiting) is recommended for production deployment.
+
+---
+
+## 🎓 Academic Context
+
+This project was developed as a **Final Thesis** titled:
+
+> “Online Financial Management Application”
+
+The research explores:
+
+* Digital economy risks
+* Overconsumption patterns
+* Personal financial discipline
+* Technological influence on economic behavior
+* Design & implementation of a secure web-based financial system
+
+---
+
+
+## 👨‍💻 Author
+
+**Grigoris Adamopoulos**
+Department of Informatics and Telecommunications
+University of Thessaly 
+---
+
+## 📜 License
+
+Developed for academic purposes.
+Not intended for commercial production use without additional security and scalability improvements.
+
+---
+
+---
 
