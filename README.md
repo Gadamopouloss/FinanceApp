@@ -153,57 +153,45 @@ MySQL Database
 
 ```
 .
+.
 ├── README.md
 ├── composer.json
 ├── composer.lock
-├── charts.php
-├── contact.php
 ├── db_connection.php
-├── edit_description.php
-├── edit_transaction.php
-├── goal.php
-├── history.php
-├── index.js
 ├── index.php
 ├── login.php
-├── logout.php
-├── monthly.php
 ├── register.php
-├── report.php
-├── request.php
-├── send_money.php
-├── sendcontacts.php
-├── styles.css
-├── submit.php
-├── tagged_transactions.php
-├── total.php
+├── logout.php
 ├── user.php
+├── send_money.php
+├── request.php
+├── submit.php
+├── edit_transaction.php
+├── edit_description.php
+├── tagged_transactions.php
+├── history.php
+├── monthly.php
 ├── yearly.php
-├── vendor/
-└── main1/
-    ├── faq.html
-    ├── faqs.js
+├── total.php
+├── report.php
+├── goal.php
+├── charts.php
+├── contact.php
+├── sendcontacts.php
+├── index.js
+├── styles.css
+├── vendor/                # Composer dependencies
+└── main1/                 # Frontend (static pages)
     ├── index.html
+    ├── faq.html
     ├── privacy.html
     ├── terms.html
     ├── tips.html
+    ├── faqs.js
     ├── tips.js
-    ├── imgs/
-    │   ├── img.jpg
-    │   ├── img11.jpg
-    │   ├── img22.jpg
-    │   ├── img33.jpg
-    │   ├── img4.jpg
-    │   ├── img44.jpg
-    │   ├── team-1.jpg
-    │   ├── team-2.jpg
-    │   ├── team-3.jpg
-    │   └── team-4.jpg
-    └── style/
-        ├── faq.css
-        ├── style.css
-        ├── team.css
-        └── tips.css
+    ├── imgs/              # Static images
+    └── style/             # CSS files
+
 
 ```
 
